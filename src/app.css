@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+	@apply hover:no-underline;
+}
+
+.after\:hash {
+	@apply no-underline !important;
+}
+
+.after\:hash::after {
+	content: '#';
+}
