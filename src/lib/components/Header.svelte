@@ -26,7 +26,7 @@
 </script>
 
 <div class="my-8 mx-auto prose">
-	<code class="text-lg font-bold">/dhrubabasu</code>
+	<code class="text-lg font-bold after:content-none before:content-none">/dhrubabasu</code>
 	<div class="flow-root mt-4">
 		<div class="flex flex-wrap items-center -my-2 -mx-1">
 			{#each links as { href, name }, idx}
