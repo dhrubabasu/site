@@ -10,10 +10,9 @@
 	<h2>MEV vs PFOF</h2>
 
 	<p class="italic">
-		Originally shared on 2024/01/02 via <a
-			target="_blank"
-			href="https://twitter.com/dhrubabasu_/status/1742242040820441196">Twitter</a
-		>. Minimally edited for website format.
+		Originally shared on 2024/01/02 via <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">
+			X
+		</a>. Minimally edited for website format.
 	</p>
 
 	<p>
