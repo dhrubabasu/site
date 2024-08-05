@@ -6,11 +6,15 @@
 	<title>MEV vs PFOF - Dhruba Basu</title>
 </svelte:head>
 
-<h2>MEV vs PFOF</h2>
+<h2>
+	<span class="text-sm font-normal text-gray-700">January 2, 2024</span>
+	<br />
+	MEV vs PFOF
+</h2>
 
 <p class="italic">
-	Originally shared via <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a> on January 2,
-	2024. Minimally edited for website format.
+	Originally shared via <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>. Minimally
+	edited for website format.
 </p>
 
 <p>
