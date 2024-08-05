@@ -2,6 +2,7 @@
 	const writings = [
 		{
 			href: '/writing/2024/01/02/mev-vs-pfof',
+			date: 'January 2, 2024',
 			title: 'MEV vs PFOF',
 		},
 	];
@@ -14,9 +15,9 @@
 <div class="mx-auto prose">
 	<h2>Writing</h2>
 
-	{#each writings as { href, title }, idx}
+	{#each writings as { href, date, title }, idx}
 		<div class:mt-4={idx > 0}>
-			<span>{href.split('/').slice(2, 5).join('/')}</span>
+			<span class="text-sm leading-7 text-gray-700">{date}</span>
 			<br />
 			<a class="text-lg" {href}>{title}</a>
 		</div>
