@@ -6,8 +6,9 @@
 	<h2>About</h2>
 
 	<ul>
+		<li>President & CTO at TBA (2024/09-)</li>
 		<li>
-			Senior Software Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (2024/01-)
+			Senior Software Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (2024/01-2024/08)
 			<ul>
 				<li>
 					<a

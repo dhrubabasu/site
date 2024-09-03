@@ -7,9 +7,8 @@
 
 	<ul>
 		<li>
-			I'm an engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a>, the team behind the
-			<a target="_blank" href="https://www.avax.network">Avalanche</a> blockchain. I do not actively trade cryptocurrencies.
-			I much prefer to spend my time coding.
+			I co-founded a company with both of my brothers! We are working on bringing fair order execution to the masses.
+			More info to come 👀
 		</li>
 		<li>
 			I write a lot of code in my spare time. Something I've built recently is a reservation bot. I like to eat at nice
