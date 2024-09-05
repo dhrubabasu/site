@@ -7,9 +7,9 @@
 </svelte:head>
 
 <h2>
-	<span class="text-sm font-normal text-gray-700">January 2, 2024</span>
-	<br />
 	MEV vs PFOF
+	<br />
+	<span class="text-sm font-normal text-gray-700">2 min read • January 2, 2024</span>
 </h2>
 
 <p class="italic">
