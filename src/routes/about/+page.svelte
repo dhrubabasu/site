@@ -6,9 +6,9 @@
 	<h2>About</h2>
 
 	<ul>
-		<li>President & CTO at TBA (2024/09-)</li>
+		<li>Co-founder of <a target="_blank" href="https://twitter.com/NuveauxTrading">Nuveaux Trading</a></li>
 		<li>
-			Senior Software Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (2024/01-2024/08)
+			Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (May 2020 - Aug 2024)
 			<ul>
 				<li>
 					<a
@@ -21,19 +21,13 @@
 					<a
 						target="_blank"
 						href="https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/103-dynamic-fees/README.md"
-						>ACP-103: Add Dynamic Fees to the X-Chain and P-Chain</a
+						>ACP-103: Add Dynamic Fees to the P-Chain</a
 					>
 				</li>
 			</ul>
 		</li>
 		<li>
-			Software Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (2020/08-2023/12)
-		</li>
-		<li>
-			Software Engineering Intern at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (2020/05-2020/07)
-		</li>
-		<li>
-			B.S. Computer Science from <a target="_blank" href="https://www.umass.edu">UMass Amherst</a> (2019/09-2020/05 + 2021/09-2023/05)
+			B.S. Computer Science from <a target="_blank" href="https://www.umass.edu">UMass Amherst</a> (May 2023)
 		</li>
 	</ul>
 </div>

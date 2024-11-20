@@ -8,10 +8,6 @@
 			name: 'Home',
 		},
 		{
-			href: '/now',
-			name: 'Now',
-		},
-		{
 			href: '/about',
 			name: 'About',
 		},
