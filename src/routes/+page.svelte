@@ -7,10 +7,12 @@
 </svelte:head>
 
 <div class="mx-auto prose">
-	<p>👋🏾 I'm Dhruba.</p>
+	<h2>👋🏾</h2>
+
+	<p>I'm Dhruba. I live in NYC.</p>
 
 	<p>
-		I live in NYC. After falling down a BGP rabbit hole in 2019 (<a
+		After falling down a BGP rabbit hole in 2019 (<a
 			target="_blank"
 			href="https://blog.cloudflare.com/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today"
 			>June 24</a
