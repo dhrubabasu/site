@@ -13,7 +13,7 @@
 </h2>
 
 <p class="italic">
-	Originally shared via <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>. Minimally
+	Originally posted to <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>. Minimally
 	edited for website format.
 </p>
 
@@ -80,7 +80,7 @@
 </p>
 
 <figure>
-	<img src={marketImage} alt="List of top trading venues for $COQ. Trader Joe has the largest trading volume." />
+	<img src={marketImage} alt="List of top trading venues for $COQ on 2024/01/02" />
 	<figcaption class="text-center">On January 2 of 2024, Trader Joe was the top trading venue for $COQ.</figcaption>
 </figure>
 

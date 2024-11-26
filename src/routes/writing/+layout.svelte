@@ -1,3 +1,9 @@
+<script>
+	import ScrollProgress from '../../components/ScrollProgress.svelte';
+</script>
+
+<ScrollProgress />
+
 <article class="mx-auto prose">
 	<slot />
 
