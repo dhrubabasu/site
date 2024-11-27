@@ -1,5 +1,6 @@
 <script>
-	import marketImage from './coq-inu-markets.jpg';
+	import janMarketImg from './2024-01-02-coq-inu-markets.jpg';
+	import novMarketImg from './2024-11-27-coq-inu-markets.jpg';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 <h2>
 	MEV vs PFOF
 	<br />
-	<span class="text-sm font-normal text-gray-700">2 min read • January 2, 2024</span>
+	<span class="text-sm font-normal text-gray-700">3 min read • January 2, 2024</span>
 </h2>
 
 <p class="italic">
@@ -19,7 +20,7 @@
 
 <p>
 	Maximal Extractable Value (MEV) in crypto is often compared to or equated with Payment for Order Flow (PFOF) in
-	TradFi.
+	TradFi. However, each impacts the unsuspecting trader in very different ways. Why? Regulations.
 </p>
 
 <p>
@@ -80,7 +81,7 @@
 </p>
 
 <figure>
-	<img src={marketImage} alt="List of top trading venues for $COQ on 2024/01/02" />
+	<img src={janMarketImg} alt="List of top trading venues for $COQ on 2024/01/02" />
 	<figcaption class="text-center">On January 2 of 2024, Trader Joe was the top trading venue for $COQ.</figcaption>
 </figure>
 
@@ -88,3 +89,16 @@
 	Will decentralized exchanges be relegated to new asset launches? Once centralized exchanges list the asset, are
 	decentralized exchanges destined to lose market share?
 </p>
+
+<p>
+	<em>
+		Update (Nov 27, 2024): Trader Joe is no longer the top trading venue for $COQ. Bybit, the new top trading venue for
+		$COQ, saw an increase in market share from 8.96% to 20.29%. Trader Joe saw a decrease in market share from 31% to
+		8%. Gate.io (16.15%) and BingX (12.14%) also lead Trader Joe in market share.
+	</em>
+</p>
+
+<figure>
+	<img src={novMarketImg} alt="List of top trading venues for $COQ on 2024/11/27" />
+	<figcaption class="text-center">On November 27 of 2024, Bybit was the top trading venue for $COQ.</figcaption>
+</figure>
