@@ -79,8 +79,7 @@
 					openDarkModeDropdown = !openDarkModeDropdown;
 					isHoveringOverDropdown = false;
 				}}
-				type="button"
-				class="py-2 px-3"
+				class="flex justify-center items-center"
 				id="dark-mode-menu-button"
 				aria-label="dark-mode-menu-button"
 				aria-expanded={openDarkModeDropdown}
