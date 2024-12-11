@@ -7,10 +7,10 @@
 	<title>MEV vs PFOF - Dhruba Basu</title>
 </svelte:head>
 
-<h2>
+<h2 class="sticky top-0 pt-4 pb-4 -mt-4 border-b bg-zinc-100 dark:bg-zinc-900">
 	MEV vs PFOF
 	<br />
-	<span class="text-sm font-normal text-gray-700">3 min read • January 2, 2024</span>
+	<span class="text-sm font-normal text-zinc-700 dark:text-zinc-400">3 min read • January 2, 2024</span>
 </h2>
 
 <p class="italic">

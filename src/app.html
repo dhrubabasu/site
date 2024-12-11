@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -12,6 +12,15 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:description" content="Dhruba Basu" />
 		<meta property="og:type" content="website" />
+
+		<!-- Set dark mode according to user preference, falling back to system preference if unset. Done via an inline head script to avoid FOUC. -->
+		<script type="text/javascript">
+			document.documentElement.classList.toggle(
+				'dark',
+				localStorage.theme === 'dark' ||
+					(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches),
+			);
+		</script>
 
 		%sveltekit.head%
 	</head>

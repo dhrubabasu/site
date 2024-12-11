@@ -31,7 +31,7 @@
 
 <div class="fixed top-0 left-0 z-40 p-0 m-0 w-full bg-transparent">
 	<div
-		class="top-0 z-50 h-1 bg-gray-900 duration-100 ease-out scroll-progress-bar"
+		class="top-0 z-50 h-1 duration-100 ease-out bg-zinc-900 scroll-progress-bar dark:bg-zinc-200"
 		style:--scroll-progress-width={width}
 	></div>
 </div>
