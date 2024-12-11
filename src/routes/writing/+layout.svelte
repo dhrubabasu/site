@@ -4,7 +4,7 @@
 
 <ScrollProgress />
 
-<article class="mx-auto prose">
+<article class="mx-auto prose dark:prose-invert">
 	<slot />
 
 	<hr />

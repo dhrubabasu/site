@@ -2,7 +2,7 @@
 	<title>Mentions - Dhruba Basu</title>
 </svelte:head>
 
-<div class="mx-auto prose">
+<div class="mx-auto prose dark:prose-invert">
 	<h2>Mentions</h2>
 
 	<p>I'm honored to have been acknowledged in these writings. All credit belongs to the authors ❤️</p>
