@@ -7,12 +7,11 @@
 	<title>MEV vs PFOF - Dhruba Basu</title>
 </svelte:head>
 
-<h2 class="sticky top-0 pt-4 -mt-4 bg-zinc-100 dark:bg-zinc-900">
+<h2 class="sticky top-0 py-4 -mt-4 border-b border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900">
 	MEV vs PFOF
-	<br />
-	<span class="text-sm font-normal text-zinc-700 dark:text-zinc-400">3 min read • January 2, 2024</span>
-	<hr class="mt-4 mb-0" />
 </h2>
+
+<span class="text-sm font-normal text-zinc-700 dark:text-zinc-400">3 min read • January 2, 2024</span>
 
 <p class="italic">
 	Originally posted to <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>. Minimally
