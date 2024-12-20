@@ -1,11 +1,13 @@
 <script>
 	import ScrollProgress from '../../components/ScrollProgress.svelte';
+
+	let { children } = $props();
 </script>
 
 <ScrollProgress />
 
 <article class="mx-auto prose dark:prose-invert">
-	<slot />
+	{@render children()}
 
 	<hr />
 

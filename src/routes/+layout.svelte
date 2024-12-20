@@ -1,7 +1,8 @@
 <script lang="ts">
 	import '../app.css';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { onMount } from 'svelte';
+	let { children } = $props();
 
 	const links = [
 		{
@@ -36,10 +37,10 @@
 			'M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25',
 	};
 
-	$: currentMode = 'system';
-	$: isDark = false;
-	$: openDarkModeDropdown = false;
-	$: isHoveringOverDropdown = false;
+	let currentMode = $state('system');
+	let isDark = $state(false);
+	let openDarkModeDropdown = $state(false);
+	let isHoveringOverDropdown = $state(false);
 
 	function toggleDarkMode(mode: Mode) {
 		if (mode === 'system') {
@@ -75,7 +76,7 @@
 		<code class="text-lg font-bold after:content-none before:content-none">/dhrubabasu</code>
 		<div class="inline-block relative">
 			<button
-				on:click={() => {
+				onclick={() => {
 					openDarkModeDropdown = !openDarkModeDropdown;
 					isHoveringOverDropdown = false;
 				}}
@@ -107,17 +108,17 @@
 					aria-orientation="vertical"
 					aria-labelledby="dark-mode-menu-button"
 					tabindex="-1"
-					on:focus={() => {
+					onfocus={() => {
 						isHoveringOverDropdown = true;
 					}}
-					on:mouseover={() => {
+					onmouseover={() => {
 						isHoveringOverDropdown = true;
 					}}
 				>
 					<div class="py-1" role="none">
 						{#each Object.entries(modePathMap) as [mode, d]}
 							<button
-								on:click={() => toggleDarkMode(mode as Mode)}
+								onclick={() => toggleDarkMode(mode as Mode)}
 								class="inline-block flex gap-2 items-center py-1 px-2 w-full hover:bg-zinc-200 hover:dark:bg-zinc-800 hover:outline-none {!isHoveringOverDropdown &&
 									currentMode == mode &&
 									'bg-zinc-200 dark:bg-zinc-800'}"
@@ -143,11 +144,11 @@
 	<div class="flow-root mt-4">
 		<div class="flex flex-wrap items-center -my-2 -mx-1">
 			{#each links as { href, name }, idx}
-				<a class="mx-1 mt-2 mb-1" class:no-underline={$page.url.pathname == href} {href}>{name}</a>
+				<a class="mx-1 mt-2 mb-1" class:no-underline={page.url.pathname == href} {href}>{name}</a>
 				{#if idx != links.length - 1}<span class="mt-2 mb-1">•</span>{/if}
 			{/each}
 		</div>
 	</div>
 </div>
 
-<slot />
+{@render children()}
