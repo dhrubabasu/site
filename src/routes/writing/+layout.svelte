@@ -1,5 +1,5 @@
 <script>
-	import ScrollProgress from '../../components/ScrollProgress.svelte';
+	import ScrollProgress from '$lib/ScrollProgress.svelte';
 
 	let { children } = $props();
 </script>

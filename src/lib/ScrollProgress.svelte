@@ -1,32 +1,15 @@
-<script lang="ts">
+<script>
 	import { onMount } from 'svelte';
+	import { debounce } from './debounce';
 
-	const debounce = <T extends (...args: any[]) => void>(func: T): (() => void) => {
-		let timeout: number;
-		return function (this: any) {
-			const context = this;
-			const args = Array.from(arguments);
-
-			if (timeout) {
-				window.cancelAnimationFrame(timeout);
-			}
-
-			timeout = window.requestAnimationFrame(function () {
-				func.apply(context, args);
-			});
-		};
-	};
-
-	let width: string = '0%';
+	let width = $state('0%');
 
 	function watchScroll() {
 		const { scrollHeight, clientHeight, scrollTop } = document.documentElement;
 		width = `${Math.min(Math.max(scrollTop / (scrollHeight - clientHeight), 0), 1) * 100}%`;
 	}
 
-	onMount(() => {
-		watchScroll();
-	});
+	onMount(watchScroll);
 </script>
 
 <div class="fixed top-0 left-0 z-40 p-0 m-0 w-full bg-transparent">
