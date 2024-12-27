@@ -13,9 +13,11 @@
 
 <span class="text-sm font-normal tracking-wide text-zinc-700 dark:text-zinc-400">3 min read • January 2, 2024</span>
 
-<p class="italic">
-	Originally posted to <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>. Minimally
-	edited for website format.
+<p>
+	<em
+		>Originally posted to <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>.
+		Minimally edited for website format.</em
+	>
 </p>
 
 <p>
