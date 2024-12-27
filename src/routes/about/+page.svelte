@@ -6,7 +6,7 @@
 	<h2>About</h2>
 
 	<ul>
-		<li>Co-founder of <a target="_blank" href="https://twitter.com/NuveauxTrading">Nuveaux Trading</a></li>
+		<li>Co-founder of <a target="_blank" href="https://x.com/NuveauxTrading">Nuveaux Trading</a></li>
 		<li>
 			Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (May 2020 - Aug 2024)
 			<ul>
