@@ -4,26 +4,16 @@
 
 	let width = $state('0%');
 
-	function watchScroll() {
+	function onScroll() {
 		const { scrollHeight, clientHeight, scrollTop } = document.documentElement;
 		width = `${Math.min(Math.max(scrollTop / (scrollHeight - clientHeight), 0), 1) * 100}%`;
 	}
 
-	onMount(watchScroll);
+	onMount(onScroll);
 </script>
 
 <div class="fixed top-0 left-0 z-40 p-0 m-0 w-full bg-transparent">
-	<div
-		class="top-0 z-50 h-1 duration-100 ease-out bg-zinc-900 scroll-progress-bar dark:bg-zinc-200"
-		style:--scroll-progress-width={width}
-	></div>
+	<div style="width: {width}" class="z-50 h-1 ease-out bg-zinc-900 transition-[width] dark:bg-zinc-100"></div>
 </div>
 
-<svelte:window on:scroll={debounce(watchScroll)} on:load={debounce(watchScroll)} />
-
-<style>
-	.scroll-progress-bar {
-		width: var(--scroll-progress-width);
-		transition-property: width;
-	}
-</style>
+<svelte:window on:scroll={debounce(onScroll)} on:load={debounce(onScroll)} />
