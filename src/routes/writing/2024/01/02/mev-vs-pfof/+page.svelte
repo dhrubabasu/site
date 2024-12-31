@@ -7,7 +7,7 @@
 	<title>MEV vs PFOF - Dhruba Basu</title>
 </svelte:head>
 
-<h2 class="sticky top-0 py-4 -mt-4 border-b border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900">
+<h2 class="sticky top-0 -mt-4 border-b border-zinc-300 bg-zinc-100 py-4 dark:border-zinc-700 dark:bg-zinc-900">
 	MEV vs PFOF
 </h2>
 

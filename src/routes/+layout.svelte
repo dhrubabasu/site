@@ -71,16 +71,16 @@
 	<title>Dhruba Basu</title>
 </svelte:head>
 
-<div class="my-8 mx-auto prose dark:prose-invert">
-	<div class="flex justify-between items-center">
-		<code class="text-lg font-bold after:content-none before:content-none">/dhrubabasu</code>
-		<div class="inline-block relative">
+<div class="prose mx-auto my-8 dark:prose-invert">
+	<div class="flex items-center justify-between">
+		<code class="text-lg font-bold before:content-none after:content-none">/dhrubabasu</code>
+		<div class="relative inline-block">
 			<button
 				onclick={() => {
 					openDarkModeDropdown = !openDarkModeDropdown;
 					isHoveringOverDropdown = false;
 				}}
-				class="flex justify-center items-center"
+				class="flex items-center justify-center"
 				id="dark-mode-menu-button"
 				aria-label="dark-mode-menu-button"
 				aria-expanded={openDarkModeDropdown}
@@ -103,7 +103,7 @@
 			</button>
 			{#if openDarkModeDropdown}
 				<div
-					class="absolute right-0 z-10 mt-2 rounded-md ring-1 shadow-lg origin-top-right focus:outline-none bg-zinc-100 ring-zinc-800/5 dark:ring-zinc-400/5 dark:bg-zinc-900"
+					class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-zinc-100 shadow-lg ring-1 ring-zinc-800/5 focus:outline-none dark:bg-zinc-900 dark:ring-zinc-400/5"
 					role="menu"
 					aria-orientation="vertical"
 					aria-labelledby="dark-mode-menu-button"
@@ -119,7 +119,7 @@
 						{#each Object.entries(modePathMap) as [mode, d]}
 							<button
 								onclick={() => toggleDarkMode(mode as Mode)}
-								class="inline-block flex gap-2 items-center py-1 px-2 w-full hover:bg-zinc-200 hover:dark:bg-zinc-800 hover:outline-none {!isHoveringOverDropdown &&
+								class="inline-block flex w-full items-center gap-2 px-2 py-1 hover:bg-zinc-200 hover:outline-none hover:dark:bg-zinc-800 {!isHoveringOverDropdown &&
 									currentMode == mode &&
 									'bg-zinc-200 dark:bg-zinc-800'}"
 							>
@@ -141,11 +141,11 @@
 			{/if}
 		</div>
 	</div>
-	<div class="flow-root mt-4">
-		<div class="flex flex-wrap items-center -my-2 -mx-1">
+	<div class="mt-4 flow-root">
+		<div class="-mx-1 -my-2 flex flex-wrap items-center">
 			{#each links as { href, name }, idx}
-				<a class="mx-1 mt-2 mb-1" class:no-underline={page.url.pathname == href} {href}>{name}</a>
-				{#if idx != links.length - 1}<span class="mt-2 mb-1">•</span>{/if}
+				<a class="mx-1 mb-1 mt-2" class:no-underline={page.url.pathname == href} {href}>{name}</a>
+				{#if idx != links.length - 1}<span class="mb-1 mt-2">•</span>{/if}
 			{/each}
 		</div>
 	</div>

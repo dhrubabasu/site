@@ -2,7 +2,7 @@
 	<title>About - Dhruba Basu</title>
 </svelte:head>
 
-<div class="mx-auto prose dark:prose-invert">
+<div class="prose mx-auto dark:prose-invert">
 	<h2>About</h2>
 
 	<ul>

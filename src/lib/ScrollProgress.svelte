@@ -12,8 +12,8 @@
 	onMount(onScroll);
 </script>
 
-<div class="fixed top-0 left-0 z-40 p-0 m-0 w-full bg-transparent">
-	<div style="width: {width}" class="z-50 h-1 ease-out bg-zinc-900 transition-[width] dark:bg-zinc-100"></div>
+<div class="fixed left-0 top-0 z-40 m-0 w-full bg-transparent p-0">
+	<div style="width: {width}" class="z-50 h-1 bg-zinc-900 transition-[width] ease-out dark:bg-zinc-100"></div>
 </div>
 
 <svelte:window on:scroll={debounce(onScroll)} on:load={debounce(onScroll)} />

@@ -6,7 +6,7 @@
 
 <ScrollProgress />
 
-<article class="mx-auto prose dark:prose-invert">
+<article class="prose mx-auto dark:prose-invert">
 	{@render children()}
 
 	<hr />
