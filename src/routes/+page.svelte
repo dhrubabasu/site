@@ -6,7 +6,7 @@
 	<title>Dhruba Basu</title>
 </svelte:head>
 
-<div class="prose mx-auto dark:prose-invert">
+<div class="prose prose-zinc mx-auto dark:prose-invert">
 	<p>I'm Dhruba 👋🏾</p>
 
 	<p>

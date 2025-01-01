@@ -12,7 +12,7 @@
 	<title>Writing - Dhruba Basu</title>
 </svelte:head>
 
-<div class="prose mx-auto dark:prose-invert">
+<div class="prose prose-zinc mx-auto dark:prose-invert">
 	<h2>Writing</h2>
 
 	<div>

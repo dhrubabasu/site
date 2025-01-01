@@ -71,7 +71,7 @@
 	<title>Dhruba Basu</title>
 </svelte:head>
 
-<div class="prose mx-auto my-8 dark:prose-invert">
+<div class="prose prose-zinc mx-auto my-8 dark:prose-invert">
 	<div class="flex items-center justify-between">
 		<code class="text-lg font-bold before:content-none after:content-none">/dhrubabasu</code>
 		<div class="relative inline-block">
