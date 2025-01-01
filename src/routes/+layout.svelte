@@ -103,7 +103,7 @@
 			</button>
 			{#if openDarkModeDropdown}
 				<div
-					class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-zinc-100 shadow-lg ring-1 ring-zinc-800/5 focus:outline-none dark:bg-zinc-900 dark:ring-zinc-400/5"
+					class="absolute right-0 z-30 mt-2 origin-top-right rounded-md bg-zinc-100 shadow-lg ring-1 ring-zinc-800/5 focus:outline-none dark:bg-zinc-900 dark:ring-zinc-400/5"
 					role="menu"
 					aria-orientation="vertical"
 					aria-labelledby="dark-mode-menu-button"
