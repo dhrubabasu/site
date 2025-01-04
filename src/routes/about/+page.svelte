@@ -1,3 +1,7 @@
+<script>
+	import ExternalLink from '$lib/ExternalLink.svelte';
+</script>
+
 <svelte:head>
 	<title>About - Dhruba Basu</title>
 </svelte:head>
@@ -6,28 +10,25 @@
 	<h2>About</h2>
 
 	<ul>
-		<li>Co-founder of <a target="_blank" href="https://x.com/NuveauxTrading">Nuveaux Trading</a></li>
+		<li>Co-founder of <ExternalLink href="https://x.com/NuveauxTrading">Nuveaux Trading</ExternalLink></li>
 		<li>
-			Engineer at <a target="_blank" href="https://www.avalabs.org">Ava Labs</a> (May 2020 - Aug 2024)
+			Engineer at <ExternalLink href="https://www.avalabs.org">Ava Labs</ExternalLink> (May 2020 - Aug 2024)
 			<ul>
 				<li>
-					<a
-						target="_blank"
+					<ExternalLink
 						href="https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/77-reinventing-subnets/README.md"
-						>ACP-77: Reinventing Subnets</a
+						>ACP-77: Reinventing Subnets</ExternalLink
 					>
 				</li>
 				<li>
-					<a
-						target="_blank"
-						href="https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/103-dynamic-fees/README.md"
-						>ACP-103: Add Dynamic Fees to the P-Chain</a
+					<ExternalLink href="https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/103-dynamic-fees/README.md"
+						>ACP-103: Add Dynamic Fees to the P-Chain</ExternalLink
 					>
 				</li>
 			</ul>
 		</li>
 		<li>
-			B.S. Computer Science from <a target="_blank" href="https://www.umass.edu">UMass Amherst</a> (May 2023)
+			B.S. Computer Science from <ExternalLink href="https://www.umass.edu">UMass Amherst</ExternalLink> (May 2023)
 		</li>
 	</ul>
 </div>

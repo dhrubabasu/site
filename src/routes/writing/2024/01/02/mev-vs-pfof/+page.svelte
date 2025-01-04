@@ -1,4 +1,6 @@
 <script>
+	import ExternalLink from '$lib/ExternalLink.svelte';
+
 	import janMarketImg from './2024-01-02-coq-inu-markets.jpg';
 	import novMarketImg from './2024-11-27-coq-inu-markets.jpg';
 </script>
@@ -12,10 +14,9 @@
 </h2>
 
 <span class="text-sm font-normal tracking-wide text-zinc-700 dark:text-zinc-400">3 min read • January 2, 2024</span>
-
 <p>
 	<em
-		>Originally posted to <a target="_blank" href="https://x.com/dhrubabasu_/status/1742242040820441196">X</a>.
+		>Originally posted to <ExternalLink href="https://x.com/dhrubabasu_/status/1742242040820441196">X</ExternalLink>.
 		Minimally edited for website format.</em
 	>
 </p>
@@ -27,9 +28,8 @@
 
 <p>
 	In TradFi, the SEC and FINRA govern how PFOF can be used by trading firms and what they can or cannot do with the
-	order flow. FINRA member firms must not let PFOF interfere with their <a
-		target="_blank"
-		href="https://www.finra.org/rules-guidance/notices/21-23">duty of best execution</a
+	order flow. FINRA member firms must not let PFOF interfere with their <ExternalLink
+		href="https://www.finra.org/rules-guidance/notices/21-23">duty of best execution</ExternalLink
 	>.
 </p>
 
@@ -40,9 +40,8 @@
 
 <p>
 	Traders using Robinhood and Schwab are, in theory, guaranteed that their order will be executed at the most favorable
-	terms reasonably available. Although both brokers profit from PFOF, SEC + FINRA <a
-		target="_blank"
-		href="https://www.sec.gov/files/34-96496-fact-sheet.pdf">certifies</a
+	terms reasonably available. Although both brokers profit from PFOF, SEC + FINRA <ExternalLink
+		href="https://www.sec.gov/files/34-96496-fact-sheet.pdf">certifies</ExternalLink
 	> best execution.
 </p>
 
@@ -52,16 +51,15 @@
 </p>
 
 <p>
-	jaredfromsubway.eth is perhaps one of the most famous MEV bots created in February 2023. This bot extracted upwards of <a
-		target="_blank"
-		href="https://www.theblock.co/post/230218/jaredfromsubway-mev-bot">$34 million</a
+	jaredfromsubway.eth is perhaps one of the most famous MEV bots created in February 2023. This bot extracted upwards of <ExternalLink
+		href="https://www.theblock.co/post/230218/jaredfromsubway-mev-bot">$34 million</ExternalLink
 	> in proceeds from unsuspecting traders participating in on-chain trading.
 </p>
 
 <p>
 	With no enforcement of good behavior, jaredfromsubway.eth can extract as much as they please from unsuspecting
 	traders. In this way, MEV is <em>more</em> nefarious than PFOF. There is no recourse for victims of MEV, unlike for
-	<a target="_blank" href="https://www.sec.gov/news/press-release/2020-321">PFOF</a>.
+	<ExternalLink href="https://www.sec.gov/news/press-release/2020-321">PFOF</ExternalLink>.
 </p>
 
 <p>
@@ -72,8 +70,8 @@
 
 <p>
 	Can we enforce good behavior cryptographically or is it necessary for a FINRA-type org to come in? There are promising
-	solutions like <a target="_blank" href="https://penumbra.zone">Penumbra</a> but a solution that does not make UX sacrifices
-	is elusive. Until then, centralized exchanges will continue to dominate.
+	solutions like <ExternalLink href="https://penumbra.zone">Penumbra</ExternalLink> but a solution that does not make UX
+	sacrifices is elusive. Until then, centralized exchanges will continue to dominate.
 </p>
 
 <p>

@@ -1,3 +1,7 @@
+<script>
+	import ExternalLink from '$lib/ExternalLink.svelte';
+</script>
+
 <svelte:head>
 	<title>Mentions - Dhruba Basu</title>
 </svelte:head>
@@ -11,8 +15,8 @@
 
 	<ul>
 		<li>
-			<a target="_blank" href="https://hackmd.io/@patrickogrady/rys8mdl5p"
-				>Vryx: Fortifying Decoupled State Machine Replication</a
+			<ExternalLink href="https://hackmd.io/@patrickogrady/rys8mdl5p"
+				>Vryx: Fortifying Decoupled State Machine Replication</ExternalLink
 			> by Patrick O'Grady
 		</li>
 	</ul>
@@ -21,8 +25,8 @@
 
 	<ul>
 		<li>
-			<a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3318327"
-				>StableFees: A Predictable Fee Market for Cryptocurrencies</a
+			<ExternalLink href="https://dx.doi.org/10.2139/ssrn.3318327"
+				>StableFees: A Predictable Fee Market for Cryptocurrencies</ExternalLink
 			> by Soumya Basu, David Easley, Maureen O'Hara and Emin Gün Sirer
 		</li>
 	</ul>
