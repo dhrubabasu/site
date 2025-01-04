@@ -7,12 +7,6 @@
 
 <ScrollProgress />
 
-<article class="prose prose-zinc mx-auto dark:prose-invert">
+<article class="prose prose-zinc mx-auto mb-8 dark:prose-invert">
 	{@render children()}
-
-	<hr />
-
-	<p class="text-center">
-		See more writing <a href="/writing">here</a>.
-	</p>
 </article>
