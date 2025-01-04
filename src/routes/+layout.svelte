@@ -1,9 +1,4 @@
 <script lang="ts">
-	import '../app.css';
-	import { page } from '$app/state';
-	import { onMount } from 'svelte';
-	let { children } = $props();
-
 	const links = [
 		{
 			href: '/',
@@ -61,10 +56,18 @@
 		isHoveringOverDropdown = false;
 	}
 
+	import { onMount } from 'svelte';
 	onMount(() => {
 		currentMode = localStorage.theme ? localStorage.theme : 'system';
 		isDark = document.documentElement.classList.contains('dark');
 	});
+
+	import type { Snippet } from 'svelte';
+	let { children }: { children: Snippet } = $props();
+
+	import { page } from '$app/state';
+
+	import '../app.css';
 </script>
 
 <svelte:head>

@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
 	import ScrollProgress from '$lib/ScrollProgress.svelte';
 
-	let { children } = $props();
+	import type { Snippet } from 'svelte';
+	let { children }: { children: Snippet } = $props();
 </script>
 
 <ScrollProgress />
