@@ -55,12 +55,6 @@
 
 <svelte:window on:scroll={debounce(onScroll)} on:load={debounce(onScroll)} />
 
-<svelte:head>
-	<title>{title} - Dhruba Basu</title>
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content={title} />
-</svelte:head>
-
 {#snippet toc(headings: Element[])}
 	<span class="mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-900 dark:text-zinc-100"> contents </span>
 	{#each headings as { id, nodeName, textContent }}
