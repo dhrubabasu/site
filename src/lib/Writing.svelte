@@ -84,22 +84,24 @@
 <h2 class="sticky top-0 z-10 -mt-4 border-b border-zinc-300 bg-zinc-100 py-4 dark:border-zinc-700 dark:bg-zinc-900">
 	<div class="flex items-center justify-between">
 		<span class="shrink">{title}</span>
-		<button
-			class="shrink-0 cursor-pointer rounded border border-zinc-300 p-1 hover:bg-zinc-200 xl:hidden dark:border-zinc-700 dark:hover:bg-zinc-800"
-			onclick={() => (open = !open)}
-			aria-label="Open table of contents."
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="size-6"
+		{#if headings.length > 0}
+			<button
+				class="shrink-0 cursor-pointer rounded border border-zinc-300 p-1 hover:bg-zinc-200 xl:hidden dark:border-zinc-700 dark:hover:bg-zinc-800"
+				onclick={() => (open = !open)}
+				aria-label="Open table of contents."
 			>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-			</svg>
-		</button>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+				</svg>
+			</button>
+		{/if}
 	</div>
 
 	{#if open}
