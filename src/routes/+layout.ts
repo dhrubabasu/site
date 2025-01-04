@@ -7,15 +7,15 @@ export const load = ({ url }) => {
 		title: 'Dhruba Basu',
 		canonical: new URL(url.pathname, url.origin).href,
 		openGraph: {
-			type: 'website',
 			url: new URL(url.pathname, url.origin).href,
-			locale: 'en_US',
+			type: 'website',
 			title: 'Dhruba Basu',
+			locale: 'en_US',
 		},
 		twitter: {
-			creator: '@dhrubabasu_',
-			site: '@dhrubabasu_',
 			cardType: 'summary',
+			site: '@dhrubabasu_',
+			creator: '@dhrubabasu_',
 		},
 	};
 

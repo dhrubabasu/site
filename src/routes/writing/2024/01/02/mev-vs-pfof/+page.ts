@@ -17,10 +17,6 @@ export const load = () => {
 				authors: ['https://x.com/dhrubabasu_'],
 			},
 		},
-		twitter: {
-			title,
-			description,
-		},
 	};
 
 	return {
