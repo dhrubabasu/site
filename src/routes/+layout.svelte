@@ -63,16 +63,17 @@
 	});
 
 	import type { Snippet } from 'svelte';
-	let { children }: { children: Snippet } = $props();
-
-	import { page } from '$app/state';
+	let { data, children }: { data: { baseMetaTags: MetaTagsProps }; children: Snippet } = $props();
 
 	import '../app.css';
+
+	import { page } from '$app/state';
+	import { MetaTags, deepMerge, type MetaTagsProps } from 'svelte-meta-tags';
+
+	let metaTags = $derived(deepMerge(data.baseMetaTags, page.data.pageMetaTags));
 </script>
 
-<svelte:head>
-	<title>Dhruba Basu</title>
-</svelte:head>
+<MetaTags {...metaTags} />
 
 <div class="prose prose-zinc mx-auto my-8 dark:prose-invert">
 	<div class="flex items-center justify-between">

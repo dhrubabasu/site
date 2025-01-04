@@ -2,10 +2,6 @@
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
 
-<svelte:head>
-	<title>Mentions - Dhruba Basu</title>
-</svelte:head>
-
 <div class="prose prose-zinc mx-auto dark:prose-invert">
 	<h2>Mentions</h2>
 

@@ -12,6 +12,9 @@ const config = {
 		output: {
 			bundleStrategy: 'single',
 		},
+		prerender: {
+			origin: 'https://dhruba.xyz',
+		},
 	},
 };
 
