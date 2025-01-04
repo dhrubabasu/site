@@ -9,9 +9,6 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter(),
-		output: {
-			bundleStrategy: 'single',
-		},
 		prerender: {
 			origin: 'https://dhruba.xyz',
 		},
