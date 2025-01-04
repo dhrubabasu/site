@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
 	import ExternalLink from '$lib/ExternalLink.svelte';
 	import Writing from '$lib/Writing.svelte';
 
 	import janMarketImg from './2024-01-02-coq-inu-markets.jpg';
 	import novMarketImg from './2024-11-27-coq-inu-markets.jpg';
+
+	let { data }: { data: { date: Date } } = $props();
 </script>
 
-<Writing title="MEV vs PFOF" readingTime={3} date={new Date(Date.UTC(2024, 0, 2, 8))}>
+<Writing title="MEV vs PFOF" readingTime={3} date={data.date}>
 	<p>
 		<em
 			>Originally posted to <ExternalLink href="https://x.com/dhrubabasu_/status/1742242040820441196">X</ExternalLink>.
