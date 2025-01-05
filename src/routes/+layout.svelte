@@ -33,7 +33,6 @@
 	};
 
 	let currentMode = $state('system');
-	let isDark = $state(false);
 	let openDarkModeDropdown = $state(false);
 	let isHoveringOverDropdown = $state(false);
 
@@ -51,15 +50,13 @@
 		);
 
 		currentMode = mode;
-		isDark = document.documentElement.classList.contains('dark');
 		openDarkModeDropdown = false;
 		isHoveringOverDropdown = false;
 	}
 
 	import { onMount } from 'svelte';
 	onMount(() => {
-		currentMode = localStorage.theme ? localStorage.theme : 'system';
-		isDark = document.documentElement.classList.contains('dark');
+		currentMode = localStorage.theme ?? 'system';
 	});
 
 	import type { Snippet } from 'svelte';
@@ -92,17 +89,13 @@
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
 					viewBox="0 0 24 24"
-					stroke-width={(isDark && currentMode == 'dark') || (!isDark && currentMode == 'light') ? 2.5 : 1.5}
-					stroke="currentColor"
-					class="size-6"
+					stroke-width="1.5"
+					class="size-6 fill-none stroke-current"
 				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d={isDark ? modePathMap['dark'] : modePathMap['light']}
-					/>
+					<path class="inline dark:hidden" stroke-linecap="round" stroke-linejoin="round" d={modePathMap['light']} />
+
+					<path class="hidden dark:inline" stroke-linecap="round" stroke-linejoin="round" d={modePathMap['dark']} />
 				</svg>
 			</button>
 			{#if openDarkModeDropdown}
@@ -123,17 +116,15 @@
 						{#each Object.entries(modePathMap) as [mode, d]}
 							<button
 								onclick={() => toggleDarkMode(mode as Mode)}
-								class="inline-block flex w-full items-center gap-2 px-2 py-1 hover:bg-zinc-200 hover:outline-none hover:dark:bg-zinc-800 {!isHoveringOverDropdown &&
+								class="flex w-full items-center gap-2 px-2 py-1 hover:bg-zinc-200 hover:outline-none hover:dark:bg-zinc-800 {!isHoveringOverDropdown &&
 									currentMode == mode &&
 									'bg-zinc-200 dark:bg-zinc-800'}"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
 									viewBox="0 0 24 24"
 									stroke-width="1.5"
-									stroke="currentColor"
-									class="size-6"
+									class="size-6 fill-none stroke-current"
 								>
 									<path stroke-linecap="round" stroke-linejoin="round" {d} />
 								</svg>
