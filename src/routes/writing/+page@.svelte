@@ -1,6 +1,11 @@
 <script>
 	const writings = [
 		{
+			href: '/writing/2025/01/06/decentralization-is-not-the-goal',
+			date: new Date(Date.UTC(2025, 0, 6, 16)),
+			title: 'Decentralization is not the goal',
+		},
+		{
 			href: '/writing/2024/01/02/mev-vs-pfof',
 			date: new Date(Date.UTC(2024, 0, 2, 8)),
 			title: 'MEV vs PFOF',
