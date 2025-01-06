@@ -72,7 +72,7 @@
 {/snippet}
 
 {#if headings.length > 0}
-	<div class="fixed inset-y-0 right-0 hidden max-w-56 flex-none pr-8 xl:block">
+	<div class="fixed inset-y-0 right-0 hidden max-w-56 flex-none pr-8 xl:block print:hidden">
 		<div class="top-4 flex max-h-screen flex-col justify-between overflow-y-auto pb-6 pt-10">
 			<div class="mb-8 space-y-4">
 				{@render toc(headings)}
@@ -86,7 +86,7 @@
 		<span class="shrink">{title}</span>
 		{#if headings.length > 0}
 			<button
-				class="shrink-0 cursor-pointer rounded border border-zinc-300 p-1 hover:bg-zinc-200 xl:hidden dark:border-zinc-700 dark:hover:bg-zinc-800"
+				class="shrink-0 cursor-pointer rounded border border-zinc-300 p-1 hover:bg-zinc-200 xl:hidden dark:border-zinc-700 dark:hover:bg-zinc-800 print:hidden"
 				onclick={() => (open = !open)}
 				aria-label="Open table of contents."
 			>
@@ -105,7 +105,7 @@
 	</div>
 
 	{#if open}
-		<div class="mt-1 space-y-2 pt-2 xl:hidden">
+		<div class="mt-1 space-y-2 pt-2 xl:hidden print:hidden">
 			{@render toc(headings)}
 		</div>
 	{/if}
