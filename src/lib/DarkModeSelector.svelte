@@ -65,7 +65,7 @@
 	</button>
 	{#if openDarkModeDropdown}
 		<div
-			class="absolute right-0 z-30 mt-2 origin-top-right rounded-md bg-zinc-100 shadow-lg ring-1 ring-zinc-800/5 focus:outline-none dark:bg-zinc-900 dark:ring-zinc-400/5"
+			class="absolute right-0 z-30 mt-2 origin-top-right rounded-md bg-zinc-100 ring-1 shadow-lg ring-zinc-800/5 focus:outline-hidden dark:bg-zinc-900 dark:ring-zinc-400/5"
 			role="menu"
 			aria-orientation="vertical"
 			aria-labelledby="dark-mode-menu-button"
@@ -81,7 +81,7 @@
 				{#each Object.entries(modePathMap) as [mode, d]}
 					<button
 						onclick={() => toggleDarkMode(mode as Mode)}
-						class="flex w-full items-center gap-2 px-2 py-1 hover:bg-zinc-200 hover:outline-none hover:dark:bg-zinc-800 {!isHoveringOverDropdown &&
+						class="flex w-full items-center gap-2 px-2 py-1 hover:bg-zinc-200 hover:outline-hidden dark:hover:bg-zinc-800 {!isHoveringOverDropdown &&
 							currentMode == mode &&
 							'bg-zinc-200 dark:bg-zinc-800'}"
 					>

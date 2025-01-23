@@ -4,7 +4,7 @@
 	import src from './turtles.jpg';
 </script>
 
-<div class="prose prose-zinc mx-auto dark:prose-invert">
+<div class="prose prose-zinc dark:prose-invert mx-auto">
 	<p>I'm Dhruba 👋🏾</p>
 
 	<p>
