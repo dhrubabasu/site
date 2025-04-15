@@ -351,8 +351,7 @@
 				id="footnote-1-content"
 				href="#footnote-1">1</a
 			></sup
-		>&nbsp;I am actively working on this at <ExternalLink href="https://x.com/NuveauxTrading">Nuveaux</ExternalLink>, <ExternalLink
-			href="https://jobs.ashbyhq.com/nuveaux-trading">join</ExternalLink
-		> us&excl;
+		>&nbsp;I am actively working on this at <ExternalLink href="https://x.com/VigilMarkets">Vigil Markets</ExternalLink
+		>, <ExternalLink href="https://jobs.ashbyhq.com/vigil-markets">join</ExternalLink> us&excl;
 	</section>
 </Writing>

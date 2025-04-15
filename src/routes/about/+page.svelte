@@ -6,7 +6,7 @@
 	<h2>About</h2>
 
 	<ul>
-		<li>Co-founder of <ExternalLink href="https://x.com/NuveauxTrading">Nuveaux Trading</ExternalLink></li>
+		<li>Co-founder of <ExternalLink href="https://vigilmarkets.com">Vigil Markets</ExternalLink></li>
 		<li>
 			Engineer at <ExternalLink href="https://www.avalabs.org">Ava Labs</ExternalLink> (May 2020 - Aug 2024)
 			<ul>
