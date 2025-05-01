@@ -2,7 +2,7 @@
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
 
-<div class="prose prose-zinc mx-auto dark:prose-invert">
+<div class="prose prose-zinc dark:prose-invert mx-auto">
 	<h2>Mentions</h2>
 
 	<p>I'm honored to have been acknowledged in these writings. All credit belongs to the authors ❤️</p>

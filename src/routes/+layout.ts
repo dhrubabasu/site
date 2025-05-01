@@ -1,8 +1,9 @@
 export const prerender = true;
 
+import type { LayoutLoad } from './$types';
 import type { MetaTagsProps } from 'svelte-meta-tags';
 
-export const load = ({ url }) => {
+export const load: LayoutLoad = ({ url }) => {
 	const baseMetaTags: MetaTagsProps = {
 		title: 'Dhruba Basu',
 		canonical: new URL(url.pathname, url.origin).href,

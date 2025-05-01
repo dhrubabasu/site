@@ -1,13 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 a {
 	@apply hover:no-underline;
 }
 
 .after\:hash {
-	@apply no-underline !important;
+	@apply no-underline!;
 }
 
 .after\:hash::after {
