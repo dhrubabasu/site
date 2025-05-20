@@ -16,7 +16,7 @@
 
 <div class="fixed inset-x-0 bottom-0 mx-4 mb-2">
 	<audio bind:paused bind:currentTime={time} class="mx-auto w-full max-w-2xl" controls>
-		<source src="" type="audio/aac" />
+		<source src="https://media.dhruba.xyz/bips-and-sips-live-ep-1.38cfd405.m4a" type="audio/x-m4a" />
 	</audio>
 </div>
 
