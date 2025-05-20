@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Talk from '$lib/Talk.svelte';
-	import audio from './audio.m4a';
 
 	let time = $state(0);
 	let paused = $state(true);
@@ -9,15 +8,15 @@
 
 	const numSecondsInMinute = 60;
 
-	function setTime(newTime: number) {
+	function seek(newTime: number) {
 		time = newTime;
 		paused = false;
 	}
 </script>
 
-<div class="fixed inset-x-0 bottom-2">
+<div class="fixed inset-x-0 bottom-0 mx-4 mb-2">
 	<audio bind:paused bind:currentTime={time} class="mx-auto w-full max-w-2xl" controls>
-		<source src={audio} type="audio/aac" />
+		<source src="" type="audio/aac" />
 	</audio>
 </div>
 
@@ -26,18 +25,15 @@
 		I join <a href="https://x.com/eshita">Eshita</a> and <a href="https://x.com/khushii_w">Khushi</a> on bips & sips to discuss
 		why decentralization isn't the goal. They get into tradeoffs, power, and when inclusion latency > execution latency.
 	</p>
-
 	<p class="my-16 text-center font-bold uppercase tracking-widest">Transcript</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(0);
+				seek(0);
 			}}>[00:00] Eshita</button
 		>
 	</h3>
-
-	<p>Welcome everyone to the very first episode of Bips and Sips Live.</p>
+	<p>Welcome everyone to the very first episode of bips & sips live.</p>
 	<p>
 		So before we get into it, I wanted to give a little bit of context on why we started this. A couple months back,
 		Khushi and I were talking about how we've stopped listening to crypto podcasts and found that a high percentage of
@@ -61,15 +57,13 @@
 		So, Dhruba is the co-founder, President, and CTO of Vigil Markets. I'll hand it over to you, Dhruba, to tell us a
 		little bit more about Vigil Markets and your background.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(1 * numSecondsInMinute + 46);
+				seek(1 * numSecondsInMinute + 46);
 			}}>[01:46] Dhruba</button
 		>
 	</h3>
-
 	<p>Yeah, thanks so much Eshita and Khushi for having me.</p>
 	<p>
 		Vigil Markets is essentially a secure trading venue that has a unique focus on order privacy. Right now, a big
@@ -83,15 +77,13 @@
 		which currently I think still does billions of requests per day and is still amongst the top APIs for blockchains
 		according to Atlas by 1kx.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(2 * numSecondsInMinute + 49);
+				seek(2 * numSecondsInMinute + 49);
 			}}>[02:49] Eshita</button
 		>
 	</h3>
-
 	<p>
 		That's awesome. Thank you. I think that gives a bit of context and we can dig into some of what you've worked on
 		throughout the conversation.
@@ -109,11 +101,10 @@
 		you think that kind of hinders its growth long term given that they've historically positioned themselves as the
 		decentralized NASDAQ?
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(3 * numSecondsInMinute + 59);
+				seek(3 * numSecondsInMinute + 59);
 			}}>[03:59] Dhruba</button
 		>
 	</h3>
@@ -140,15 +131,13 @@
 		on which parts and products blockchains are actually good for, and which ones maybe we shouldn't try to really go
 		after.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(5 * numSecondsInMinute + 39);
+				seek(5 * numSecondsInMinute + 39);
 			}}>[05:39] Khushi</button
 		>
 	</h3>
-
 	<p>
 		That's awesome. Jumping in here real quick. I think it's a really great point that some products are built really
 		well for blockchain systems, but for other products they're not as well built. And I feel the way we've tried to
@@ -162,11 +151,10 @@
 		And is there a perfect balance, or do you think there will always be successful products on either end of the
 		decentralization spectrum?
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(6 * numSecondsInMinute + 30);
+				seek(6 * numSecondsInMinute + 30);
 			}}>[06:30] Dhruba</button
 		>
 	</h3>
@@ -205,11 +193,10 @@
 		but in terms of how people view products that they want to use, decentralization really isn't a concern for them.
 		It's, "What are the features that I'm getting out of this? What pain points is it solving for me?"
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(9 * numSecondsInMinute + 18);
+				seek(9 * numSecondsInMinute + 18);
 			}}>[09:18] Khushi</button
 		>
 	</h3>
@@ -228,11 +215,10 @@
 		So, I wanted to ask you if you could just give a couple sentences of how you compare these two approaches and what
 		you think about DAI versus USDC.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(10 * numSecondsInMinute + 10);
+				seek(10 * numSecondsInMinute + 10);
 			}}>[10:10] Dhruba</button
 		>
 	</h3>
@@ -258,11 +244,10 @@
 		also neglecting to mention there are benefits of centralized stablecoins like USDC because I'm not the one solely
 		responsible for maintaining the safety of my asset.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(11 * numSecondsInMinute + 52);
+				seek(11 * numSecondsInMinute + 52);
 			}}>[11:52] Khushi</button
 		>
 	</h3>
@@ -287,11 +272,10 @@
 		stablecoin and the asset. So why doesn't that transparency itself make it more trustworthy than something like
 		Circle as an asset issuer for USDC?
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(13 * numSecondsInMinute + 10);
+				seek(13 * numSecondsInMinute + 10);
 			}}>[13:10] Dhruba</button
 		>
 	</h3>
@@ -327,11 +311,10 @@
 		doesn't matter until it really matters. But I think assuming that that is enough for widespread adoption is not the
 		right way to go about it.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(15 * numSecondsInMinute + 42);
+				seek(15 * numSecondsInMinute + 42);
 			}}>[15:42] Khushi</button
 		>
 	</h3>
@@ -346,11 +329,10 @@
 		So, it's really funny that now we're ending up in a place where insurance is again one of the things that makes a
 		company or a stablecoin more trusted than something that's on-chain, decentralized, and fully transparent.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(16 * numSecondsInMinute + 20);
+				seek(16 * numSecondsInMinute + 20);
 			}}>[16:20] Dhruba</button
 		>
 	</h3>
@@ -360,7 +342,7 @@
 	<h3>
 		<button
 			onclick={() => {
-				setTime(16 * numSecondsInMinute + 26);
+				seek(16 * numSecondsInMinute + 26);
 			}}>[16:26] Khushi</button
 		>
 	</h3>
@@ -377,15 +359,13 @@
 		And so I wonder what you think about how decentralization relates to the concept of being crypto-native and whether
 		companies are only crypto-native if they're actually decentralized in their technology.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(17 * numSecondsInMinute + 12);
+				seek(17 * numSecondsInMinute + 12);
 			}}>[17:12] Dhruba</button
 		>
 	</h3>
-
 	<p>
 		Yeah, it's a great question. I think "crypto-native" is a tricky phrase because it's kind of been, for lack of a
 		better word, bastardized by the industry. It's really just a marketing term at this point.
@@ -405,30 +385,26 @@
 		who or what you're trusting. But in terms of "crypto-native," it's really up to us to decide what is crypto-native
 		and what values do we look for in a crypto-native institution.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(18 * numSecondsInMinute + 31);
+				seek(18 * numSecondsInMinute + 31);
 			}}>[18:31] Eshita</button
 		>
 	</h3>
-
 	<p>
 		Do you think that the origin of that term "crypto-native" arose in the early days, when the founding principles of
 		crypto really drove people to join it? And that became the marketing term, and companies—centralized or not—use that
 		term. It's the thing that brings people in. What do you think it would take to discard this term and still be honest
 		about what you're offering, even if you're not?
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(19 * numSecondsInMinute + 16);
+				seek(19 * numSecondsInMinute + 16);
 			}}>[19:16] Dhruba</button
 		>
 	</h3>
-
 	<p>
 		I mean, I think the biggest problem there is people aren't typically honest about what they're offering. So I think
 		that would be the first step.
@@ -464,11 +440,10 @@
 		ecosystem on Solana or frankly even the liquidity on Coinbase unless I move off of Ethereum and go to Coinbase or
 		move off of Ethereum and go to Solana.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(21 * numSecondsInMinute + 47);
+				seek(21 * numSecondsInMinute + 47);
 			}}>[21:47] Khushi</button
 		>
 	</h3>
@@ -482,11 +457,10 @@
 		you're thinking about balancing this power distribution against real-world constraints, whether that be latency or
 		dealing with regulation or just maybe overall UX.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(22 * numSecondsInMinute + 30);
+				seek(22 * numSecondsInMinute + 30);
 			}}>[22:30] Dhruba</button
 		>
 	</h3>
@@ -545,7 +519,8 @@
 		controlling the asset class and they have put up these walled gardens for liquidity, we've reinvented TradFi without
 		any of the consumer protections. And I think, as I mentioned before, we could pull up <a href="https://rekt.news"
 			>rekt.news</a
-		>. The idea that users have to be the sole bearers of their fate is probably not the right path to keep going down.
+		> to see just how badly we've failed consumers here. The idea that users have to be the sole bearers of their fate is
+		probably not the right path to keep going down.
 	</p>
 	<p>
 		So, we hope to make a change here. That's how we're balancing power distribution with real-world constraints. We
@@ -553,15 +528,13 @@
 		elsewhere with some of the safety guarantees that TradFi provides. Frankly, the fact that we haven't updated the
 		system in a good way here is not good.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(27 * numSecondsInMinute + 12);
+				seek(27 * numSecondsInMinute + 12);
 			}}>[27:12] Eshita</button
 		>
 	</h3>
-
 	<p>
 		I love that. For all of us building in crypto, it's important that we think about user safety first, but also still
 		preserve their choice in that. So, we're at time here. Thank you Dhruba again for kicking off Bips and Sips live
@@ -569,24 +542,20 @@
 		listening. We'll be back soon with more short and sharp conversations with the folks behind our favorite ideas.
 		Appreciate everyone hopping in.
 	</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(27 * numSecondsInMinute + 46);
+				seek(27 * numSecondsInMinute + 46);
 			}}>[27:46] Dhruba</button
 		>
 	</h3>
-
 	<p>Thanks so much guys.</p>
-
 	<h3>
 		<button
 			onclick={() => {
-				setTime(27 * numSecondsInMinute + 47);
+				seek(27 * numSecondsInMinute + 47);
 			}}>[27:47] Eshita</button
 		>
 	</h3>
-
 	<p>Thank you. Bye.</p>
 </Talk>
