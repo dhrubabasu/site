@@ -14,7 +14,7 @@
 	}
 </script>
 
-<div class="fixed inset-x-0 bottom-0 mx-4 mb-2">
+<div class="fixed inset-x-0 bottom-0 mx-4 bg-zinc-100 pb-2 dark:bg-zinc-900">
 	<audio bind:paused bind:currentTime={time} class="mx-auto w-full max-w-2xl" controls>
 		<source src="https://media.dhruba.xyz/bips-and-sips-live-ep-1.38cfd405.m4a" type="audio/x-m4a" />
 	</audio>
