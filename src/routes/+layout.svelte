@@ -13,6 +13,10 @@
 			name: 'Writing',
 		},
 		{
+			href: '/talks',
+			name: 'Talks',
+		},
+		{
 			href: '/mentions',
 			name: 'Mentions',
 		},
