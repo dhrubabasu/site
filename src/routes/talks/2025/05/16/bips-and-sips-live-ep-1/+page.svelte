@@ -471,9 +471,12 @@
 	</p>
 	<p>
 		So we started with the observation that crypto now is more centralized than it's ever been. Just take Coinbase for
-		example. Coinbase by itself holds over 12% of all Bitcoin. And if you—that may not sound super alarming to some
-		people, but to me, that indicates a trend. If one person controls all of the assets on a chain, I don't really see
-		how this corresponds to some of the core values of crypto.
+		example. Coinbase by itself holds over 12% of all Bitcoin<a
+			href="https://www.forbes.com/sites/javierpaz/2025/01/28/the-worlds-most-trustworthy-crypto-exchanges/"
+			target="_blank"
+			rel="noopener noreferrer"><sup>[source]</sup></a
+		>. And if you—that may not sound super alarming to some people, but to me, that indicates a trend. If one person
+		controls all of the assets on a chain, I don't really see how this corresponds to some of the core values of crypto.
 	</p>
 	<p>
 		So, in my view, and this might be a little controversial, is that the core values of crypto are being eroded by the
