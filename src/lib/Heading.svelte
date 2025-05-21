@@ -9,7 +9,7 @@
 	{text}
 	<a
 		href="#{slug}"
-		class="after:hash shrink-0 pl-1 text-zinc-500 no-underline opacity-100 group-hover:opacity-100 md:absolute md:-ml-5 md:pl-0 md:pr-2 md:opacity-0 dark:text-zinc-400"
+		class="after:hash shrink-0 pl-1 text-zinc-500 no-underline opacity-100 group-hover:opacity-100 md:absolute md:-ml-5 md:pr-2 md:pl-0 md:opacity-0 dark:text-zinc-400"
 		aria-label="Anchor"
 	></a>
 </svelte:element>

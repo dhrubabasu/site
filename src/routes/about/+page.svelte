@@ -2,7 +2,7 @@
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
 
-<div class="prose prose-zinc mx-auto dark:prose-invert">
+<div class="prose prose-zinc dark:prose-invert mx-auto">
 	<h2>About</h2>
 
 	<ul>
