@@ -25,7 +25,7 @@
 		I join <a href="https://x.com/eshita">Eshita</a> and <a href="https://x.com/khushii_w">Khushi</a> on bips & sips to discuss
 		why decentralization isn't the goal. They get into tradeoffs, power, and when inclusion latency > execution latency.
 	</p>
-	<p class="my-16 text-center font-bold uppercase tracking-widest">Transcript</p>
+	<p class="py-8 text-center font-bold tracking-widest uppercase">Transcript</p>
 	<h3>
 		<button
 			onclick={() => {
