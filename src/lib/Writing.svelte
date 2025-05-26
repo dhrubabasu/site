@@ -57,7 +57,7 @@
 
 {#snippet toc(headings: Element[])}
 	<span class="mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-900 dark:text-zinc-100"> contents </span>
-	{#each headings as { id, nodeName, textContent }}
+	{#each headings as { id, nodeName, textContent } (id)}
 		<p class:ml-4={nodeName == selectors.slice(-2).toUpperCase()}>
 			<a
 				onclick={() => (open = false)}

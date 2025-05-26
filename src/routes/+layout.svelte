@@ -47,7 +47,7 @@
 	</div>
 	<div class="mt-4 flow-root">
 		<div class="-mx-1 -my-2 flex flex-wrap items-center">
-			{#each links as { href, name }, idx}
+			{#each links as { href, name }, idx (href)}
 				<a class="mx-1 mb-1 mt-2" class:no-underline={page.url.pathname == href} {href}>{name}</a>
 				{#if idx != links.length - 1}<span class="mb-1 mt-2">•</span>{/if}
 			{/each}

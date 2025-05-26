@@ -12,7 +12,7 @@
 	<h2>Talks</h2>
 
 	<div>
-		{#each talks as { href, title, date }}
+		{#each talks as { href, title, date } (href)}
 			<div
 				class="flex flex-col justify-between border-zinc-300 py-3 md:flex-row md:items-center md:py-2 dark:border-zinc-700 [&:first-child]:pt-0 [&:not(:last-child)]:border-b"
 			>

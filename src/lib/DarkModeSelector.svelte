@@ -46,7 +46,7 @@
 			tabindex="-1"
 		>
 			<div class="py-1" role="none">
-				{#each modes as mode}
+				{#each modes as mode (mode)}
 					<button
 						onclick={() => {
 							setMode(mode);
