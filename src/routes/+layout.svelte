@@ -32,7 +32,11 @@
 	let metaTags = $derived(deepMerge(data.baseMetaTags, page.data.pageMetaTags));
 
 	import DarkModeSelector from '$lib/DarkModeSelector.svelte';
+
+	import { ModeWatcher } from 'mode-watcher';
 </script>
+
+<ModeWatcher />
 
 <MetaTags {...metaTags} />
 
