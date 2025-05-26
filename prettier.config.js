@@ -1,5 +1,5 @@
 /** @type {import('prettier').Config} */
-module.exports = {
+const config = {
 	useTabs: true,
 	singleQuote: true,
 	trailingComma: 'all',
@@ -7,3 +7,5 @@ module.exports = {
 	plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
 	overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
 };
+
+export default config;
