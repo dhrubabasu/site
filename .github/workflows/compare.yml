@@ -1,0 +1,48 @@
+name: Compare
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      old:
+        description: 'Old'
+        required: false
+        default: 'master'
+      new:
+        description: 'New'
+        required: true
+
+# Cancel ongoing workflow runs if a new one is started
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  Compare:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ (github.event.inputs.new != '') && github.event.inputs.new || github.event.ref }}
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: '.bun-version'
+
+      - name: Build new code
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+          mv ./build ./new-build
+
+      - name: Build base code
+        run: |
+          git fetch origin master ${{ github.event.pull_request.base.sha }}
+          HEAD="$(git rev-parse HEAD)"
+          git reset --hard ${{ github.event.pull_request.base.sha }}
+          bun install --frozen-lockfile
+          bun run build
+          mv ./build ./old-build
+
+      - name: Compare build outputs
+        run: diff -r ./new-build ./old-build || true
