@@ -1,0 +1,6 @@
+name = "site"
+pages_build_output_dir = "build"
+compatibility_date = "2024-06-29"
+
+[vars]
+BUN_VERSION = "1.2.0"
