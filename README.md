@@ -5,7 +5,7 @@ Deployed continuously via Cloudflare Pages to [dhruba.xyz](https://dhruba.xyz)
 ## Install
 
 ```bash
-npm install
+bun install
 ```
 
 ## Develop
@@ -13,10 +13,10 @@ npm install
 Start a development server:
 
 ```bash
-npm run dev
+bun run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun run dev -- --open
 ```
 
 ## Build
@@ -24,7 +24,7 @@ npm run dev -- --open
 Create a production version:
 
 ```bash
-npm run build
+bun run build
 ```
 
-Preview the production build with `npm run preview`.
+Preview the production build with `bun run preview`.

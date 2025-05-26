@@ -8,9 +8,6 @@ on:
   merge_group:
     types: [checks_requested]
 
-env:
-  node-version: 22
-
 permissions:
   contents: read # to fetch code (actions/checkout)
 
@@ -24,29 +21,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run check
+          bun-version-file: '.bun-version'
+      - run: bun install --frozen-lockfile
+      - run: bun run check
   Lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run lint
+          bun-version-file: '.bun-version'
+      - run: bun install --frozen-lockfile
+      - run: bun run lint
   Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run build
+          bun-version-file: '.bun-version'
+      - run: bun install --frozen-lockfile
+      - run: bun run build
