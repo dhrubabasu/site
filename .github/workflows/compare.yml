@@ -46,7 +46,7 @@ jobs:
 
       - name: Compare build outputs
         run: |
-          DIFF_OUTPUT=$(diff -r ./pr-build-output ./base-build-output || true)
+          DIFF_OUTPUT=$(diff -r ./new-build ./old-build || true)
           echo "$DIFF_OUTPUT"
           echo "-----------------------------------------------------"
 
