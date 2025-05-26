@@ -8,13 +8,13 @@
 	];
 </script>
 
-<div class="prose prose-zinc mx-auto dark:prose-invert">
+<div class="prose prose-zinc dark:prose-invert mx-auto">
 	<h2>Talks</h2>
 
 	<div>
 		{#each talks as { href, title, date } (href)}
 			<div
-				class="flex flex-col justify-between border-zinc-300 py-3 md:flex-row md:items-center md:py-2 dark:border-zinc-700 [&:first-child]:pt-0 [&:not(:last-child)]:border-b"
+				class="flex flex-col justify-between border-zinc-300 py-3 not-last:border-b first:pt-0 md:flex-row md:items-center md:py-2 dark:border-zinc-700"
 			>
 				<a class="text-lg font-semibold" {href}>{title}</a>
 				<div class="font-left min-w-32 text-sm tracking-wide text-zinc-600 dark:text-zinc-400">

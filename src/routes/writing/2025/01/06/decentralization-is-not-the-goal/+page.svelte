@@ -289,7 +289,7 @@
 		practical alternative to holding assets on centralized exchanges or custodians, especially when it comes to
 		accessing centralized liquidity<sup
 			><a
-				class="scroll-mt-20 focus:outline focus:outline-2 focus:outline-current"
+				class="scroll-mt-20 focus:outline-2 focus:outline-current focus:outline-solid"
 				id="footnote-1"
 				href="#footnote-1-content">1</a
 			></sup
@@ -347,7 +347,7 @@
 	<section>
 		<sup
 			><a
-				class="scroll-mt-20 focus:outline focus:outline-2 focus:outline-current"
+				class="scroll-mt-20 focus:outline-2 focus:outline-current focus:outline-solid"
 				id="footnote-1-content"
 				href="#footnote-1">1</a
 			></sup
