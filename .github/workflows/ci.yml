@@ -27,9 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run check
+      - run: bun install --frozen-lockfile
+      - run: bun run check
   Lint:
     runs-on: ubuntu-latest
     steps:
@@ -37,9 +36,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run lint
+      - run: bun install --frozen-lockfile
+      - run: bun run lint
   Build:
     runs-on: ubuntu-latest
     steps:
@@ -47,6 +45,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run build
+      - run: bun install --frozen-lockfile
+      - run: bun run build
