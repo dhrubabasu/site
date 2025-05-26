@@ -27,6 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
+      - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run check
   Lint:
@@ -36,6 +37,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
+      - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run lint
   Build:
@@ -45,5 +47,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
+      - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run build
