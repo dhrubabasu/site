@@ -45,20 +45,4 @@ jobs:
           mv ./build ./old-build
 
       - name: Compare build outputs
-        run: |
-          DIFF_OUTPUT=$(diff -r ./new-build ./old-build || true)
-          echo "$DIFF_OUTPUT"
-          echo "-----------------------------------------------------"
-
-      # - name: Comment benchmark result
-      #   continue-on-error: true
-      #   uses: marocchino/sticky-pull-request-comment@v2
-      #   with:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     header: min-version
-      #     hide_and_recreate: true
-      #     hide_classify: "OUTDATED"
-      #     message: |
-      #       ```
-      #       ${{ env.RESULT }}
-      #       ```
+        run: diff -r ./new-build ./old-build || true
