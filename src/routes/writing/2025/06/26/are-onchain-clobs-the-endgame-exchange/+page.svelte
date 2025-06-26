@@ -12,6 +12,7 @@
 	<p>
 		<em
 			>Special thanks to <ExternalLink href="https://x.com/soumyab8">Soumya Basu</ExternalLink>,
+			<ExternalLink href="https://x.com/DominicCarb">Dominic Carbonaro</ExternalLink>,
 			<ExternalLink href="https://x.com/0xEverly">Jacob Everly</ExternalLink>,
 			<ExternalLink href="https://x.com/chadfowler">Chad Fowler</ExternalLink>,
 			<ExternalLink href="https://x.com/0xFunk">Benjamin Funk</ExternalLink>,
