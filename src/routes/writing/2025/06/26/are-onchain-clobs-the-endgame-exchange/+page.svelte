@@ -12,6 +12,7 @@
 	<p>
 		<em
 			>Special thanks to <ExternalLink href="https://x.com/soumyab8">Soumya Basu</ExternalLink>,
+			<ExternalLink href="https://x.com/DominicCarb">Dominic Carbonaro</ExternalLink>,
 			<ExternalLink href="https://x.com/0xEverly">Jacob Everly</ExternalLink>,
 			<ExternalLink href="https://x.com/chadfowler">Chad Fowler</ExternalLink>,
 			<ExternalLink href="https://x.com/0xFunk">Benjamin Funk</ExternalLink>,
@@ -28,26 +29,28 @@
 
 	<p>Hyperliquid. The results speak for themselves:</p>
 
-	<li>
-		<ExternalLink
-			href="https://www.theblock.co/post/356654/hyperliquid-hits-record-248-billion-perp-volume-in-may-capturing-over-10-of-binance-flow"
-			>$248 billion</ExternalLink
-		>
-		perp volume in May (10% of Binance)
-	</li>
-	<li>
-		<ExternalLink href="https://www.theblock.co/data/stablecoins/usd-pegged/usdc-supply-by-blockchain"
-			>$3.6B</ExternalLink
-		> of USDC locked (tied with Base and only behind Ethereum and Solana)
-	</li>
-	<li>
-		<ExternalLink href="https://coinmarketcap.com/currencies/hyperliquid">11th</ExternalLink> most valuable cryptocurrency
-		($36.78B FDV vs Solana's $87.49B FDV)
-	</li>
-	<li>
-		Airdropped <ExternalLink href="https://www.binance.com/en/square/post/16934799538017">$1.6B</ExternalLink> worth of tokens
-		to its users
-	</li>
+	<ul>
+		<li>
+			<ExternalLink
+				href="https://www.theblock.co/post/356654/hyperliquid-hits-record-248-billion-perp-volume-in-may-capturing-over-10-of-binance-flow"
+				>$248 billion</ExternalLink
+			>
+			perp volume in May (10% of Binance)
+		</li>
+		<li>
+			<ExternalLink href="https://www.theblock.co/data/stablecoins/usd-pegged/usdc-supply-by-blockchain"
+				>$3.6B</ExternalLink
+			> of USDC locked (tied with Base and only behind Ethereum and Solana)
+		</li>
+		<li>
+			<ExternalLink href="https://coinmarketcap.com/currencies/hyperliquid">11th</ExternalLink> most valuable cryptocurrency
+			($36.78B FDV vs Solana's $87.49B FDV)
+		</li>
+		<li>
+			Airdropped <ExternalLink href="https://www.binance.com/en/square/post/16934799538017">$1.6B</ExternalLink> worth of
+			tokens to its users
+		</li>
+	</ul>
 
 	<p>
 		After the FTX implosion, conventional wisdom declared the exchange market saturated and the era of disruptors over.
@@ -218,7 +221,7 @@
 	<p>
 		While the fight for market share percentage can feel zero-sum, the exchange business itself is not—the pie is
 		constantly growing. For context, the total monthly trading volume for crypto has surged from under $2 trillion in
-		early 2023 to over $9 trillion in early 2025\.
+		early 2023 to over $9 trillion in early 2025.
 	</p>
 
 	<p>
