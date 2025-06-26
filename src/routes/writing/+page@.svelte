@@ -1,6 +1,11 @@
 <script>
 	const writings = [
 		{
+			href: '/writing/2025/06/26/are-onchain-clobs-the-endgame-exchange',
+			date: new Date(Date.UTC(2025, 5, 26, 18)),
+			title: 'Onchain CLOBs: The Endgame Exchange?',
+		},
+		{
 			href: '/writing/2025/01/06/decentralization-is-not-the-goal',
 			date: new Date(Date.UTC(2025, 0, 6, 16)),
 			title: 'Decentralization is not the goal',
