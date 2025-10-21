@@ -1,6 +1,11 @@
 <script>
 	const writings = [
 		{
+			href: '/writing/2025/10/21/make-exchanges-boring-again',
+			date: new Date(Date.UTC(2025, 9, 21, 14)),
+			title: 'Make Exchanges Boring Again',
+		},
+		{
 			href: '/writing/2025/06/26/are-onchain-clobs-the-endgame-exchange',
 			date: new Date(Date.UTC(2025, 5, 26, 18)),
 			title: 'Onchain CLOBs: The Endgame Exchange?',
