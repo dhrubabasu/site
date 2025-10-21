@@ -3,7 +3,7 @@ import type { MetaTagsProps } from 'svelte-meta-tags';
 export const load = () => {
 	const title = 'Make Exchanges Boring Again - Dhruba Basu';
 	const description =
-		'This article argues that the all-in-one crypto exchange model is an inherent architectural flaw that accelerates market crashes, and that the only solution is to unbundle services into neutral, non-conflicted infrastructure.';
+		'The 10/10 crash proved the all-in-one "casino" model is a dangerous conflict of interest. This post argues that the future of crypto finance is unbundled, neutral, and boring.';
 	const publishedTime = new Date(Date.UTC(2025, 9, 21, 14));
 
 	const pageMetaTags: MetaTagsProps = {
