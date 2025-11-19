@@ -15,7 +15,7 @@ export const load = () => {
 			article: {
 				publishedTime: publishedTime.toISOString(),
 				modifiedTime: publishedTime.toISOString(),
-				authors: ['https://x.com/dhrubabasu_'],
+				authors: ['https://x.com/dhrubabasu'],
 			},
 		},
 	};
