@@ -11,7 +11,7 @@
 <Writing title="MEV vs PFOF" readingTime={3} date={data.date}>
 	<p>
 		<em
-			>Originally posted to <ExternalLink href="https://x.com/dhrubabasu_/status/1742242040820441196">X</ExternalLink>.
+			>Originally posted to <ExternalLink href="https://x.com/dhrubabasu/status/1742242040820441196">X</ExternalLink>.
 			Minimally edited for website format.</em
 		>
 	</p>

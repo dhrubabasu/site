@@ -15,7 +15,7 @@ export const load = () => {
 			article: {
 				publishedTime: publishedTime.toISOString(),
 				modifiedTime: new Date(Date.UTC(2024, 10, 27, 8)).toISOString(),
-				authors: ['https://x.com/dhrubabasu_'],
+				authors: ['https://x.com/dhrubabasu'],
 			},
 		},
 	};

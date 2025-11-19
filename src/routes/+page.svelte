@@ -24,7 +24,7 @@
 				/>
 			</svg>
 		</ExternalLink>
-		<ExternalLink href="https://x.com/dhrubabasu_">
+		<ExternalLink href="https://x.com/dhrubabasu">
 			<svg class="size-5 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<title>X</title>
 				<path

@@ -14,8 +14,8 @@ export const load = ({ url }) => {
 		},
 		twitter: {
 			cardType: 'summary',
-			site: '@dhrubabasu_',
-			creator: '@dhrubabasu_',
+			site: '@dhrubabasu',
+			creator: '@dhrubabasu',
 		},
 	};
 
